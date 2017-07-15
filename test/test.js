@@ -29,8 +29,10 @@ describe('who-is-sciper cli', function() {
     cliOption = '128871';
   });
 
-  it('should match "Duratti" with sciper 128871', function() {
+  it('should match person with sciper 128871', function() {
     response.should.match(/Duratti/);
+    response.should.match(/Lindo/);
+    response.should.match(/INN/);
     cliOption = '--config=./test/testConfigGood.json';
   });
 
