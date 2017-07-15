@@ -1,0 +1,21 @@
+{
+  "name": "who-is-sciper",
+  "version": "0.0.1",
+  "description": "Find out who a person is given a sciper",
+  "keywords": [
+    "EPFL",
+    "sciper",
+    "people",
+    "person",
+    "cli"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/epfl-devrun/who-is-sciper.git",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
