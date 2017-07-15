@@ -1,0 +1,6 @@
+{
+  "preset": "node-style-guide",
+  "excludeFiles": [
+    "node_modules/**"
+  ],
+}
