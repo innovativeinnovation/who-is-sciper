@@ -10,5 +10,9 @@
   "undef": true,
   "unused": false,
   "strict": true,
-  "globals": {}
+  "globals": {
+    "beforeEach": true,
+    "describe": true,
+    "it": true
+  }
 }
