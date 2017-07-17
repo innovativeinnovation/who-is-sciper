@@ -33,7 +33,6 @@ describe('who-is-sciper cli', function() {
     response.should.match(/Duratti/);
     response.should.match(/Lindo/);
     response.should.match(/INN/);
-    cliOption = '--config=./test/testConfigGood.json';
   });
 
 });

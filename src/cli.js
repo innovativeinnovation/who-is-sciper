@@ -49,9 +49,17 @@ var displayPerson = function(person) {
 
   var gender = detectGender.detect(person.firstname);
   if (gender === 'female') {
-    console.log(chalk.hex('#FF69B4')(infos));
+    try {
+      console.log(chalk.hex('#FF69B4')(infos));
+    } catch (err) {
+      console.log(infos);
+    }
   } else if (gender === 'male') {
-    console.log(chalk.hex('#1E90FF')(infos));
+    try {
+      console.log(chalk.hex('#1E90FF')(infos));
+    } catch (err) {
+      console.log(infos);
+    }
   } else {
     console.log(infos);
   }
