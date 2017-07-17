@@ -51,7 +51,7 @@ var displayPerson = function(person) {
   if (gender === 'female') {
     console.log(chalk.hex('#FF69B4')(infos));
   } else if (gender === 'male') {
-    console.log(chalk.blue(infos));
+    console.log(chalk.hex('#1E90FF')(infos));
   } else {
     console.log(infos);
   }
