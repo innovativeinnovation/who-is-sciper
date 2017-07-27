@@ -36,7 +36,9 @@ var sciper  = argv._[ 0 ];
 var displayPerson = function(person) {
   var infos = '';
   infos += 'Name:     ' + person.firstname + ' ' + person.name + '\n';
-  infos += 'Email:    ' + person.email + '\n';
+  if (person.email) {
+    infos += 'Email:    ' + person.email + '\n';
+  }
   if (person.office) {
     infos += 'Office:   ' + person.office + '\n';
   }
@@ -68,5 +70,5 @@ var displayPerson = function(person) {
 epflPeopleApi.findBySciper(sciper, 'en').then(function(person) {
   displayPerson(person);
 }).catch(function(err) {
-  console.log(err);
+  console.log(err.message);
 });
