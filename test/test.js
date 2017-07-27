@@ -26,6 +26,16 @@ describe('who-is-sciper cli', function() {
 
   it('should match version with option -v', function() {
     response.should.equal(version + '\n');
+    cliOption = '100000';
+  });
+
+  it('should return error with sciper 100000', function() {
+    response.should.match(/Sciper does not exist/);
+    cliOption = '69';
+  });
+
+  it('should return error with sciper 69', function() {
+    response.should.match(/Expected a sciper/);
     cliOption = '128871';
   });
 
