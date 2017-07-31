@@ -16,6 +16,14 @@ var yargs         = require('yargs')
   .command('sciper', '6-digit unique EPFL identification number.')
   .required(1, 'sciper is required')
 
+  // Language
+  .option('l', {
+    alias: 'language',
+    describe: 'Informations in "en" or "fr"',
+    requiresArg: true,
+    type: 'string',
+  })
+
   // Version
   .alias('v', 'version')
   .version(function() {
@@ -32,6 +40,7 @@ var yargs         = require('yargs')
 
 var argv = yargs.argv;
 var sciper  = argv._[ 0 ];
+var locale  = 'en';
 
 var displayPerson = function(person) {
   var infos = '';
@@ -67,7 +76,11 @@ var displayPerson = function(person) {
   }
 };
 
-epflPeopleApi.findBySciper(sciper, 'en').then(function(person) {
+if (argv.l && argv.l === 'fr') {
+  locale = 'fr';
+}
+
+epflPeopleApi.findBySciper(sciper, locale).then(function(person) {
   displayPerson(person);
 }).catch(function(err) {
   console.log(err.message);
