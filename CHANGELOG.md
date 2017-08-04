@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v0.1.1 / 2017-08-04
+
+  - Fix missing file in package.json
+
 ### v0.1.0 / 2017-08-04
 
   - Show accreditations of a person
