@@ -10,6 +10,7 @@
 var epflPeopleApi = require('epfl-people-api');
 var detectGender  = require('gender-detection');
 var chalk         = require('chalk');
+var i18n          = require('./i18n.json');
 var yargs         = require('yargs')
 
   // Sciper
@@ -42,37 +43,58 @@ var argv = yargs.argv;
 var sciper  = argv._[ 0 ];
 var locale  = 'en';
 
+var MAX_LINE_LENGTH = {en: 10, fr: 14};
+
+var createText = function(key, maxLength) {
+  var text = '';
+  if (key) {
+    text = i18n[locale][key] + ':';
+  }
+  for (var i = text.length; i < maxLength; i++) {
+    text += ' ';
+
+  }
+  return text;
+};
+
 var aggregateInfos = function(person) {
   var infos = '';
-  infos += 'Name:     ' + person.firstname + ' ' + person.name + '\n';
+  infos += createText('name', MAX_LINE_LENGTH[locale]) + person.firstname +
+    ' ' + person.name + '\n';
   if (person.email) {
-    infos += 'Email:    ' + person.email + '\n';
+    infos += createText('email', MAX_LINE_LENGTH[locale]) + person.email +
+      '\n';
   }
   for (var i = 0; i < person.accreds.length; i++) {
-    infos += '\n' + 'Position: ' + person.accreds[i].position + '\n';
-    infos += 'In unit:  ' + person.accreds[i].acronym + '\n';
+    infos += '\n' + createText('position', MAX_LINE_LENGTH[locale]) +
+      person.accreds[i].position + '\n';
+    infos += createText('unit', MAX_LINE_LENGTH[locale]) +
+      person.accreds[i].acronym + '\n';
     if (person.accreds[i].address) {
       var addressPart = person.accreds[i].address.split('$');
-      infos += 'Address:  ';
+      infos += createText('address', MAX_LINE_LENGTH[locale]);
       for (var j = 0; j < addressPart.length; j++) {
         if (j !== 0) {
-          infos += '         ';
+          infos += createText(undefined, MAX_LINE_LENGTH[locale]);
         }
-        infos += addressPart[j] + '\n';
+        infos += addressPart[j].trim() + '\n';
       }
     }
     if (person.accreds[i].office) {
-      infos += 'Office:   ' + person.accreds[i].office + '\n';
+      infos += createText('office', MAX_LINE_LENGTH[locale]) +
+        person.accreds[i].office + '\n';
     }
     if (person.accreds[i].phones) {
-      infos += 'Phone:    ' + person.accreds[i].phones + '\n';
+      infos += createText('phone', MAX_LINE_LENGTH[locale]) +
+        person.accreds[i].phones + '\n';
     }
   }
   return infos;
 };
 
 var put = function(firstname, sciper, infos) {
-  infos += '\n' + 'See https://people.epfl.ch/cgi-bin/people?id=' + sciper;
+  infos += '\n' + i18n[locale].see +
+    ' https://people.epfl.ch/cgi-bin/people?id=' + sciper;
   var gender = detectGender.detect(firstname);
   if (gender === 'female') {
     try {
