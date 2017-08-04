@@ -10,7 +10,6 @@
 var epflPeopleApi = require('epfl-people-api');
 var detectGender  = require('gender-detection');
 var chalk         = require('chalk');
-var i18n          = require('./i18n.json');
 var yargs         = require('yargs')
 
   // Sciper
@@ -44,6 +43,29 @@ var yargs         = require('yargs')
 var argv = yargs.argv;
 var sciper  = argv._[ 0 ];
 var locale  = 'en';
+
+var i18n = {
+  en: {
+    name: 'Name',
+    email: 'Email',
+    position: 'Position',
+    unit: 'In unit',
+    address: 'Address',
+    office: 'Office',
+    phone: 'Phone',
+    see: 'See',
+  },
+  fr: {
+    name: 'Nom',
+    email: 'Email',
+    position: 'Position',
+    unit: 'Dans l\'unité',
+    address: 'Adresse',
+    office: 'Bureau',
+    phone: 'Téléphone',
+    see: 'Voir',
+  },
+};
 
 var MAX_LINE_LENGTH = {en: 10, fr: 14};
 
