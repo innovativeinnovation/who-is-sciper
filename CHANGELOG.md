@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v0.1.2 / 2017-08-04
+
+  - Move translations terms in cli
+
 ### v0.1.1 / 2017-08-04
 
   - Fix missing file in package.json
