@@ -1,6 +1,6 @@
 {
   "name": "who-is-sciper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find out who a person is given a sciper",
   "keywords": [
     "EPFL",
@@ -17,7 +17,8 @@
   },
   "bin": "src/cli.js",
   "files": [
-    "src/cli.js"
+    "src/cli.js",
+    "src/i18.json"
   ],
   "scripts": {
     "test": "jshint . && jscs . && mocha"
