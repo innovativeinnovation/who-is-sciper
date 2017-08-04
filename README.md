@@ -44,8 +44,13 @@ Commands:
   sciper  6-digit unique EPFL identification number.
 
 Options:
-  -v, --version  Show version number                                   [boolean]
-  -h, --help     Show help                                             [boolean]
+  -l, --language  Show informations in "en" or "fr"              [string]
+  -v, --version   Show version number                            [boolean]
+  -h, --help      Show help                                      [boolean]
+
+Examples:
+  who-is-sciper 128871
+  who-is-sciper 275746 -l fr
 
 Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 ```
