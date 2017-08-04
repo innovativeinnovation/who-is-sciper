@@ -20,7 +20,7 @@ var yargs         = require('yargs')
   // Language
   .option('l', {
     alias: 'language',
-    describe: 'Informations in "en" or "fr"',
+    describe: 'Show informations in "en" or "fr"',
     requiresArg: true,
     type: 'string',
   })
@@ -36,6 +36,8 @@ var yargs         = require('yargs')
   .help('h')
   .alias('h', 'help')
   .usage('Usage: $0 <sciper>')
+  .example('$0 128871')
+  .example('$0 275746 -l fr')
   .epilog('Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
     'Switzerland, VPSI.');
 
