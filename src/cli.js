@@ -114,7 +114,7 @@ var aggregateInfos = function(person) {
 
 var put = function(firstname, sciper, infos) {
   infos += '\n' + i18n[locale].see +
-    ' https://people.epfl.ch/cgi-bin/people?id=' + sciper;
+    ' https://people.epfl.ch/' + sciper;
   var gender = detectGender.detect(firstname);
   if (gender === 'female') {
     try {
