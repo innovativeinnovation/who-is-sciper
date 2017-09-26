@@ -23,15 +23,15 @@
     "test": "jshint . && jscs . && mocha"
   },
   "devDependencies": {
-    "chai": "^4.1.0",
+    "chai": "^4.1.2",
     "jscs": "^3.0.7",
     "jshint": "^2.9.5",
-    "mocha": "^3.4.2"
+    "mocha": "^3.5.3"
   },
   "dependencies": {
-    "chalk": "^2.0.1",
+    "chalk": "^2.1.0",
     "epfl-people-api": "0.2.0",
     "gender-detection": "0.0.5",
-    "yargs": "^8.0.2"
+    "yargs": "^9.0.1"
   }
 }
