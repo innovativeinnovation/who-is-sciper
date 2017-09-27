@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v0.1.3 / 2017-09-27
+
+  - Update dependencies
+  - Simplify people url
+
 ### v0.1.2 / 2017-08-04
 
   - Move translations terms in cli
