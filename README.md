@@ -14,7 +14,7 @@
     <img alt="Dependency Status" src="https://gemnasium.com/badges/github.com/epfl-devrun/who-is-sciper.svg" />
   </a>
   <a href="https://raw.githubusercontent.com/epfl-devrun/who-is-sciper/master/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
+    <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
   <a href='https://www.npmjs.com/package/who-is-sciper'>
     <img alt="NPM Version" src="https://img.shields.io/npm/v/who-is-sciper.svg" />
@@ -36,7 +36,7 @@ $ npm install -g who-is-sciper
 Usage
 -----
 
-```
+```console
 $ who-is-sciper
 Usage: who-is-sciper <sciper>
 
@@ -44,9 +44,9 @@ Commands:
   sciper  6-digit unique EPFL identification number.
 
 Options:
-  -l, --language  Show informations in "en" or "fr"              [string]
-  -v, --version   Show version number                            [boolean]
-  -h, --help      Show help                                      [boolean]
+  -l, --language  Show informations in "en" or "fr"       [string]
+  -h, --help      Show help                               [boolean]
+  -v, --version   Show version number                     [boolean]
 
 Examples:
   who-is-sciper 128871
@@ -58,7 +58,7 @@ Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 Screenshot
 ----------
 
-![Command line](https://raw.githubusercontent.com/epfl-devrun/who-is-sciper/master/docs/readme/screenshot.png)
+![command line screenshot](https://raw.githubusercontent.com/epfl-devrun/who-is-sciper/master/docs/readme/screenshot.png)
 
 
 Contributing
