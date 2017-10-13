@@ -26,11 +26,11 @@
     "chai": "^4.1.2",
     "jscs": "^3.0.7",
     "jshint": "^2.9.5",
-    "mocha": "^3.5.3"
+    "mocha": "^4.0.1"
   },
   "dependencies": {
     "chalk": "^2.1.0",
-    "epfl-people-api": "0.2.0",
+    "epfl-people-api": "0.2.1",
     "gender-detection": "0.0.5",
     "yargs": "^9.0.1"
   }
