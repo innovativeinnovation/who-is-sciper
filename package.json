@@ -29,9 +29,9 @@
     "mocha": "^4.0.1"
   },
   "dependencies": {
-    "chalk": "^2.1.0",
-    "epfl-people-api": "0.2.1",
+    "chalk": "^2.3.0",
+    "epfl-people-api": "1.0.0",
     "gender-detection": "0.0.5",
-    "yargs": "^9.0.1"
+    "yargs": "^10.0.3"
   }
 }
