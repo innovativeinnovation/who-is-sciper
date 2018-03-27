@@ -5,12 +5,10 @@
  * See the LICENSE file for more details.
  */
 
-'use strict';
-
 var epflPeopleApi = require('epfl-people-api');
-var detectGender  = require('gender-detection');
-var chalk         = require('chalk');
-var yargs         = require('yargs')
+var detectGender = require('gender-detection');
+var chalk = require('chalk');
+var yargs = require('yargs')
 
   // Sciper
   .command('sciper', '6-digit unique EPFL identification number.')
@@ -21,7 +19,7 @@ var yargs         = require('yargs')
     alias: 'language',
     describe: 'Show informations in "en" or "fr"',
     requiresArg: true,
-    type: 'string',
+    type: 'string'
   })
 
   // Version
@@ -37,8 +35,8 @@ var yargs         = require('yargs')
     'Switzerland, VPSI.');
 
 var argv = yargs.argv;
-var sciper  = argv._[ 0 ];
-var locale  = 'en';
+var sciper = argv._[ 0 ];
+var locale = 'en';
 
 var i18n = {
   en: {
@@ -49,7 +47,7 @@ var i18n = {
     address: 'Address',
     office: 'Office',
     phone: 'Phone',
-    see: 'See',
+    see: 'See'
   },
   fr: {
     name: 'Nom',
@@ -59,25 +57,24 @@ var i18n = {
     address: 'Adresse',
     office: 'Bureau',
     phone: 'Téléphone',
-    see: 'Voir',
-  },
+    see: 'Voir'
+  }
 };
 
 var MAX_LINE_LENGTH = {en: 10, fr: 14};
 
-var createText = function(key, maxLength) {
+var createText = function (key, maxLength) {
   var text = '';
   if (key) {
     text = i18n[locale][key] + ':';
   }
   for (var i = text.length; i < maxLength; i++) {
     text += ' ';
-
   }
   return text;
 };
 
-var aggregateInfos = function(person) {
+var aggregateInfos = function (person) {
   var infos = '';
   infos += createText('name', MAX_LINE_LENGTH[locale]) + person.firstname +
     ' ' + person.name + '\n';
@@ -112,7 +109,7 @@ var aggregateInfos = function(person) {
   return infos;
 };
 
-var put = function(firstname, sciper, infos) {
+var put = function (firstname, sciper, infos) {
   infos += '\n' + i18n[locale].see +
     ' https://people.epfl.ch/' + sciper;
   var gender = detectGender.detect(firstname);
@@ -133,7 +130,7 @@ var put = function(firstname, sciper, infos) {
   }
 };
 
-var displayFull = function(person) {
+var displayFull = function (person) {
   put(
     person.firstname,
     person.sciper,
@@ -145,8 +142,8 @@ if (argv.l && argv.l === 'fr') {
   locale = 'fr';
 }
 
-epflPeopleApi.findBySciper(sciper, locale).then(function(person) {
+epflPeopleApi.findBySciper(sciper, locale).then(function (person) {
   displayFull(person);
-}).catch(function(err) {
+}).catch(function (err) {
   console.log(err.message);
 });
