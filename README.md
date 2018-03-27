@@ -52,7 +52,7 @@ Examples:
   who-is-sciper 128871
   who-is-sciper 275746 -l fr
 
-Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
+Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 ```
 
 Screenshot
@@ -78,6 +78,6 @@ License
 
 Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
 
 See the [LICENSE](LICENSE) file for more details.
