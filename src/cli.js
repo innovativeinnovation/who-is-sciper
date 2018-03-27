@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+ * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
  * See the LICENSE file for more details.
  */
 
@@ -31,7 +31,7 @@ var yargs = require('yargs')
   .usage('Usage: $0 <sciper>')
   .example('$0 128871')
   .example('$0 275746 -l fr')
-  .epilog('Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
+  .epilog('Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
     'Switzerland, VPSI.');
 
 var argv = yargs.argv;
