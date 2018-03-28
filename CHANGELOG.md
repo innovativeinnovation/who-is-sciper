@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.1.0 / 2018-03-28
+
+  - Move to eslint
+  - Update dependencies
+  - Update license copyright date
+  - Disable `package-lock.json`
+
 ### v1.0.1 / 2018-01-25
 
   - Update dependencies
