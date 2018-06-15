@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v2.0.0 / 2018-06-15
+
+  - Drop support for Node < 6
+  - Rewrite code
+  - Move to david-dm (watching deps)
+  - Update dependencies
+
 ### v1.1.0 / 2018-03-28
 
   - Move to eslint
