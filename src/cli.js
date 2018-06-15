@@ -5,10 +5,10 @@
  * See the LICENSE file for more details.
  */
 
-var epflPeopleApi = require('epfl-people-api');
-var detectGender = require('gender-detection');
-var chalk = require('chalk');
-var yargs = require('yargs')
+const epflPeopleApi = require('epfl-people-api');
+const detectGender = require('gender-detection');
+const chalk = require('chalk');
+const yargs = require('yargs')
 
   // Sciper
   .command('sciper', '6-digit unique EPFL identification number.')
@@ -34,11 +34,11 @@ var yargs = require('yargs')
   .epilog('Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
     'Switzerland, VPSI.');
 
-var argv = yargs.argv;
-var sciper = argv._[ 0 ];
-var locale = 'en';
+let argv = yargs.argv;
+let sciper = argv._[ 0 ];
+let locale = 'en';
 
-var i18n = {
+const i18n = {
   en: {
     name: 'Name',
     email: 'Email',
@@ -61,36 +61,36 @@ var i18n = {
   }
 };
 
-var MAX_LINE_LENGTH = {en: 10, fr: 14};
+const MAX_LINE_LENGTH = {en: 10, fr: 14};
 
-var createText = function (key, maxLength) {
-  var text = '';
+let createText = (key, maxLength) => {
+  let text = '';
   if (key) {
     text = i18n[locale][key] + ':';
   }
-  for (var i = text.length; i < maxLength; i++) {
+  for (let i = text.length; i < maxLength; i++) {
     text += ' ';
   }
   return text;
 };
 
-var aggregateInfos = function (person) {
-  var infos = '';
+let aggregateInfos = (person) => {
+  let infos = '';
   infos += createText('name', MAX_LINE_LENGTH[locale]) + person.firstname +
     ' ' + person.name + '\n';
   if (person.email) {
     infos += createText('email', MAX_LINE_LENGTH[locale]) + person.email +
       '\n';
   }
-  for (var i = 0; i < person.accreds.length; i++) {
+  for (let i = 0; i < person.accreds.length; i++) {
     infos += '\n' + createText('position', MAX_LINE_LENGTH[locale]) +
       person.accreds[i].position + '\n';
     infos += createText('unit', MAX_LINE_LENGTH[locale]) +
       person.accreds[i].acronym + '\n';
     if (person.accreds[i].address) {
-      var addressPart = person.accreds[i].address.split('$');
+      let addressPart = person.accreds[i].address.split('$');
       infos += createText('address', MAX_LINE_LENGTH[locale]);
-      for (var j = 0; j < addressPart.length; j++) {
+      for (let j = 0; j < addressPart.length; j++) {
         if (j !== 0) {
           infos += createText(undefined, MAX_LINE_LENGTH[locale]);
         }
@@ -109,7 +109,7 @@ var aggregateInfos = function (person) {
   return infos;
 };
 
-var put = function (firstname, sciper, infos) {
+let put = (firstname, sciper, infos) => {
   infos += '\n' + i18n[locale].see +
     ' https://people.epfl.ch/' + sciper;
   var gender = detectGender.detect(firstname);
@@ -130,7 +130,7 @@ var put = function (firstname, sciper, infos) {
   }
 };
 
-var displayFull = function (person) {
+let displayFull = (person) => {
   put(
     person.firstname,
     person.sciper,
@@ -142,8 +142,6 @@ if (argv.l && argv.l === 'fr') {
   locale = 'fr';
 }
 
-epflPeopleApi.findBySciper(sciper, locale).then(function (person) {
+epflPeopleApi.findBySciper(sciper, locale).then((person) => {
   displayFull(person);
-}).catch(function (err) {
-  console.log(err.message);
-});
+}).catch((err) => console.log(err.message));
