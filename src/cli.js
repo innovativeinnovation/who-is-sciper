@@ -30,7 +30,7 @@ const yargs = require('yargs')
   .alias('h', 'help')
   .usage('Usage: $0 <sciper>')
   .example('$0 128871')
-  .example('$0 275746 -l fr')
+  .example('$0 278890 -l fr')
   .epilog('Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
     'Switzerland, VPSI.');
 
