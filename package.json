@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/epfl-devrun/who-is-sciper.git",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "bin": "src/cli.js",
   "files": [
@@ -24,18 +24,18 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "eslint": "^4.19.1",
+    "eslint": "^5.3.0",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "mocha": "^5.2.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "epfl-people-api": "^2.0.1",
+    "epfl-people-api": "^3.0.0",
     "gender-detection": "0.0.5",
-    "yargs": "^11.0.0"
+    "yargs": "^12.0.1"
   }
 }
