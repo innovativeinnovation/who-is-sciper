@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v3.0.0 / 2018-08-09
+
+  - Drop support for Node < 8
+  - Update dependencies
+  - Update cli example
+
 ### v2.0.0 / 2018-06-15
 
   - Drop support for Node < 6
