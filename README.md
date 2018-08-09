@@ -50,7 +50,7 @@ Options:
 
 Examples:
   who-is-sciper 128871
-  who-is-sciper 275746 -l fr
+  who-is-sciper 278890 -l fr
 
 Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 ```
