@@ -8,9 +8,9 @@ Setup
 -----
 
 ```bash
-$ git clone REPO
-$ cd who-is-sciper
-$ npm install
+git clone git@github.com:epfl-devrun/who-is-sciper.git
+cd who-is-sciper
+npm i
 ```
 
 Test
@@ -19,16 +19,23 @@ Test
 Cli tests:
 
 ```bash
-$ npm test
+npm t
+```
+
+Run
+---
+
+```bash
+./src/cli.js
 ```
 
 Release
 -------
 
-  1. Bump the correct version (``npm version [<newversion> | major | minor | patch]``)
+  1. Bump the correct version (`npm version [<newversion> | major | minor | patch]`)
   2. Update the file [CHANGELOG.md](CHANGELOG.md)
-  3. Create the tag (``git tag -a v<version> -m "Tagging the v<version> release"``)
-  4. Publish with ``npm publish``
+  3. Create the tag (`git tag -a v<version> -m "Tagging the v<version> release"`)
+  4. Publish with `npm publish`
 
 License
 -------
