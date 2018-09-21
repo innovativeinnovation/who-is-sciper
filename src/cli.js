@@ -61,7 +61,7 @@ const i18n = {
   }
 };
 
-const MAX_LINE_LENGTH = {en: 10, fr: 14};
+const MAX_LINE_LENGTH = { en: 10, fr: 14 };
 
 let createText = (key, maxLength) => {
   let text = '';
