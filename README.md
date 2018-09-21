@@ -30,14 +30,14 @@ Install this globally and you'll have access to the `who-is-sciper` command
 anywhere on your system.
 
 ```bash
-$ npm install -g who-is-sciper
+npm i who-is-sciper -g
 ```
 
 Usage
 -----
 
 ```console
-$ who-is-sciper
+who-is-sciper
 Usage: who-is-sciper <sciper>
 
 Commands:
