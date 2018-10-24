@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 /*
- * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
+ * Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland,
+ * VPSI, 2017-2018.
+ * Modified work (c) William Belle, 2018.
  * See the LICENSE file for more details.
  */
 
@@ -30,9 +32,7 @@ const yargs = require('yargs')
   .alias('h', 'help')
   .usage('Usage: $0 <sciper>')
   .example('$0 128871')
-  .example('$0 278890 -l fr')
-  .epilog('Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
-    'Switzerland, VPSI.');
+  .example('$0 278890 -l fr');
 
 let argv = yargs.argv;
 let sciper = argv._[ 0 ];

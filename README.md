@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Who Is Sciper" src="https://raw.githubusercontent.com/epfl-devrun/who-is-sciper/master/docs/readme/readme-logo.png">
+  <img alt="Who Is Sciper" src="https://raw.githubusercontent.com/innovativeinnovation/who-is-sciper/master/docs/readme/readme-logo.png">
 </p>
 
 <p align="center">
@@ -7,13 +7,13 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/epfl-devrun/who-is-sciper">
-    <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/who-is-sciper.svg?branch=master">
+  <a href="https://travis-ci.org/innovativeinnovation/who-is-sciper">
+    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/who-is-sciper.svg?branch=master">
   </a>
-  <a href="https://david-dm.org/epfl-devrun/who-is-sciper">
-    <img alt="Dependency Status" src="https://david-dm.org/epfl-devrun/who-is-sciper/status.svg"/>
+  <a href="https://david-dm.org/innovativeinnovation/who-is-sciper">
+    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/who-is-sciper/status.svg"/>
   </a>
-  <a href="https://raw.githubusercontent.com/epfl-devrun/who-is-sciper/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/innovativeinnovation/who-is-sciper/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
   <a href='https://www.npmjs.com/package/who-is-sciper'>
@@ -51,14 +51,12 @@ Options:
 Examples:
   who-is-sciper 128871
   who-is-sciper 278890 -l fr
-
-Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 ```
 
 Screenshot
 ----------
 
-![command line screenshot](https://raw.githubusercontent.com/epfl-devrun/who-is-sciper/master/docs/readme/screenshot.png)
+![command line screenshot](https://raw.githubusercontent.com/innovativeinnovation/who-is-sciper/master/docs/readme/screenshot.png)
 
 
 Contributing
@@ -78,6 +76,7 @@ License
 
 Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
+Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.  
+Modified work (c) William Belle, 2018.
 
 See the [LICENSE](LICENSE) file for more details.

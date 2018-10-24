@@ -11,7 +11,7 @@
   ],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/epfl-devrun/who-is-sciper.git",
+  "repository": "https://github.com/innovativeinnovation/who-is-sciper.git",
   "engines": {
     "node": ">=8"
   },
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "epfl-people-api": "^3.0.1",
+    "epfl-people-api": "^3.0.2",
     "gender-detection": "0.0.5",
     "yargs": "^12.0.2"
   }
