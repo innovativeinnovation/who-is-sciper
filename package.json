@@ -23,19 +23,19 @@
     "test": "eslint . && mocha"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^5.6.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.12.1",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
-    "epfl-people-api": "^3.0.2",
-    "gender-detection": "0.0.5",
-    "yargs": "^12.0.2"
+    "chalk": "^2.4.2",
+    "epfl-people-api": "^3.0.3",
+    "gender-detection": "0.1.0",
+    "yargs": "^12.0.5"
   }
 }
