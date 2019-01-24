@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v3.0.3 / 2019-01-24
+
+  - Update dependencies
+  - Test against Node.js 11
+
 ### v3.0.2 / 2018-10-24
 
   - Update copyright (transfer from EPFL DevRun)
