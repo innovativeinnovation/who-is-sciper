@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v3.0.4 / 2019-02-21
+
+  - Update dependencies
+  - Update screenshot
+
 ### v3.0.3 / 2019-01-24
 
   - Update dependencies
