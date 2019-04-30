@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v3.0.5 / 2019-04-30
+
+  - Improve documentation
+  - Update dependencies
+  - Update screenshot
+  - Test against Node.js 12
+
 ### v3.0.4 / 2019-02-21
 
   - Update dependencies
