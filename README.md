@@ -58,6 +58,10 @@ Screenshot
 
 ![command line screenshot](https://raw.githubusercontent.com/innovativeinnovation/who-is-sciper/master/docs/readme/screenshot.png)
 
+See also
+--------
+
+  * [epfl-people-api](https://github.com/innovativeinnovation/epfl-people-api)
 
 Contributing
 ------------
