@@ -34,8 +34,8 @@ const yargs = require('yargs')
   .example('$0 128871')
   .example('$0 278890 -l fr');
 
-let argv = yargs.argv;
-let sciper = argv._[ 0 ];
+const argv = yargs.argv;
+const sciper = argv._[0];
 let locale = 'en';
 
 const i18n = {
@@ -63,7 +63,7 @@ const i18n = {
 
 const MAX_LINE_LENGTH = { en: 10, fr: 14 };
 
-let createText = (key, maxLength) => {
+const createText = (key, maxLength) => {
   let text = '';
   if (key) {
     text = i18n[locale][key] + ':';
@@ -74,7 +74,7 @@ let createText = (key, maxLength) => {
   return text;
 };
 
-let aggregateInfos = (person) => {
+const aggregateInfos = (person) => {
   let infos = '';
   infos += createText('name', MAX_LINE_LENGTH[locale]) + person.firstname +
     ' ' + person.name + '\n';
@@ -88,7 +88,7 @@ let aggregateInfos = (person) => {
     infos += createText('unit', MAX_LINE_LENGTH[locale]) +
       person.accreds[i].acronym + '\n';
     if (person.accreds[i].address) {
-      let addressPart = person.accreds[i].address.split('$');
+      const addressPart = person.accreds[i].address.split('$');
       infos += createText('address', MAX_LINE_LENGTH[locale]);
       for (let j = 0; j < addressPart.length; j++) {
         if (j !== 0) {
@@ -109,7 +109,7 @@ let aggregateInfos = (person) => {
   return infos;
 };
 
-let put = (firstname, sciper, infos) => {
+const put = (firstname, sciper, infos) => {
   infos += '\n' + i18n[locale].see +
     ' https://people.epfl.ch/' + sciper;
   var gender = detectGender.detect(firstname);
@@ -130,7 +130,7 @@ let put = (firstname, sciper, infos) => {
   }
 };
 
-let displayFull = (person) => {
+const displayFull = (person) => {
   put(
     person.firstname,
     person.sciper,
