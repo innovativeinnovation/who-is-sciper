@@ -42,6 +42,7 @@ const i18n = {
   en: {
     name: 'Name',
     email: 'Email',
+    profile: 'Profile',
     position: 'Position',
     unit: 'In unit',
     address: 'Address',
@@ -52,6 +53,7 @@ const i18n = {
   fr: {
     name: 'Nom',
     email: 'Email',
+    profile: 'Profil',
     position: 'Position',
     unit: 'Dans l\'unité',
     address: 'Adresse',
@@ -80,6 +82,10 @@ const aggregateInfos = (person) => {
     ' ' + person.name + '\n';
   if (person.email) {
     infos += createText('email', MAX_LINE_LENGTH[locale]) + person.email +
+      '\n';
+  }
+  if (person.profile) {
+    infos += createText('profile', MAX_LINE_LENGTH[locale]) + person.profile +
       '\n';
   }
   for (let i = 0; i < person.accreds.length; i++) {
