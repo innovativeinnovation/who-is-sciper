@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v3.1.1 / 2019-10-04
+
+  - Update dependencies
+
 ### v3.1.0 / 2019-07-13
 
   - Display profile
