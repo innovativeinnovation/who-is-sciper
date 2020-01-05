@@ -118,7 +118,7 @@ const aggregateInfos = (person) => {
 const put = (firstname, sciper, infos) => {
   infos += '\n' + i18n[locale].see +
     ' https://people.epfl.ch/' + sciper;
-  var gender = detectGender.detect(firstname);
+  const gender = detectGender.detect(firstname);
   if (gender === 'female') {
     try {
       console.log(chalk.hex('#FD4286')(infos));

@@ -61,7 +61,7 @@ Screenshot
 See also
 --------
 
-  * [epfl-people-api](https://github.com/innovativeinnovation/epfl-people-api)
+* [epfl-people-api](https://github.com/innovativeinnovation/epfl-people-api)
 
 Contributing
 ------------
@@ -73,7 +73,7 @@ See [Contributing](CONTRIBUTING.md).
 Developer
 ---------
 
-  * [William Belle](https://github.com/williambelle)
+* [William Belle](https://github.com/williambelle)
 
 License
 -------
