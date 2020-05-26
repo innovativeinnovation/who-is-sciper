@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v4.0.1 / 2020-05-26
+
+  - Update dependencies
+  - Test against Node.js 14
+
 ### v4.0.0 / 2020-01-05
 
   - Drop support for Node < 10
