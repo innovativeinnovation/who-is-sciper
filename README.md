@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/innovativeinnovation/who-is-sciper">
-    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/who-is-sciper.svg?branch=master">
+  <a href="https://travis-ci.com/innovativeinnovation/who-is-sciper">
+    <img alt="Travis Status" src="https://travis-ci.com/innovativeinnovation/who-is-sciper.svg?branch=master">
   </a>
   <a href="https://david-dm.org/innovativeinnovation/who-is-sciper">
     <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/who-is-sciper/status.svg"/>
