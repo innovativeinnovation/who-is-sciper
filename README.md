@@ -7,11 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.com/innovativeinnovation/who-is-sciper">
-    <img alt="Travis Status" src="https://travis-ci.com/innovativeinnovation/who-is-sciper.svg?branch=master">
-  </a>
-  <a href="https://david-dm.org/innovativeinnovation/who-is-sciper">
-    <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/who-is-sciper/status.svg"/>
+  <a href="https://github.com/innovativeinnovation/who-is-sciper/actions">
+    <img alt="Build Status" src="https://github.com/innovativeinnovation/who-is-sciper/workflows/Build/badge.svg?branch=master">
   </a>
   <a href="https://raw.githubusercontent.com/innovativeinnovation/who-is-sciper/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
