@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v5.0.1 / 2021-08-19
+
+  - Update dependencies
+
 ### v5.0.0 / 2021-06-03
 
   - Drop support for Node.js < 12
