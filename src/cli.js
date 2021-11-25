@@ -103,13 +103,16 @@ const aggregateInfos = (person) => {
         infos += addressPart[j].trim() + '\n';
       }
     }
-    if (person.accreds[i].office) {
+
+    if (person.accreds[i].officeList &&
+        person.accreds[i].officeList.length > 0) {
       infos += createText('office', MAX_LINE_LENGTH[locale]) +
-        person.accreds[i].office + '\n';
+        person.accreds[i].officeList.join(', ') + '\n';
     }
-    if (person.accreds[i].phones) {
+    if (person.accreds[i].phoneList &&
+        person.accreds[i].phoneList.length > 0) {
       infos += createText('phone', MAX_LINE_LENGTH[locale]) +
-        person.accreds[i].phones + '\n';
+        person.accreds[i].phoneList.join(', ') + '\n';
     }
   }
   return infos;
