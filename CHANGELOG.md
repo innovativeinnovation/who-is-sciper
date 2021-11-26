@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v5.0.2 / 2021-11-26
+
+  - Migrate to new API
+  - Test against Node.js 17
+
 ### v5.0.1 / 2021-08-19
 
   - Update dependencies
