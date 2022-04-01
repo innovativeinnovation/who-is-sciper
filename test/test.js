@@ -42,6 +42,6 @@ describe('who-is-sciper cli', function () {
   it('should match person with sciper 128871', () => {
     response.should.match(/Duratti/);
     response.should.match(/Lindo/);
-    response.should.match(/INN/);
+    response.should.match(/MA A0/);
   });
 });
