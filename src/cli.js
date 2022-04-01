@@ -90,7 +90,7 @@ const aggregateInfos = (person) => {
     infos += '\n' + createText('position', MAX_LINE_LENGTH[locale]) +
       person.accreds[i].position + '\n';
     infos += createText('unit', MAX_LINE_LENGTH[locale]) +
-      person.accreds[i].acronym + '\n';
+      person.accreds[i].acronym + ' (' + person.accreds[i].name + ')' + '\n';
 
     if (person.accreds[i].officeList &&
         person.accreds[i].officeList.length > 0) {
