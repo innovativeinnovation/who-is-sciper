@@ -43,5 +43,7 @@ describe('who-is-sciper cli', function () {
     response.should.match(/Duratti/);
     response.should.match(/Lindo/);
     response.should.match(/MA A0/);
+    response.should.match(/FSD/);
+    response.should.match(/Development/);
   });
 });
