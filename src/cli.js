@@ -45,7 +45,6 @@ const i18n = {
     profile: 'Profile',
     position: 'Position',
     unit: 'In unit',
-    address: 'Address',
     office: 'Office',
     phone: 'Phone',
     see: 'See'
@@ -56,7 +55,6 @@ const i18n = {
     profile: 'Profil',
     position: 'Position',
     unit: 'Dans l\'unité',
-    address: 'Adresse',
     office: 'Bureau',
     phone: 'Téléphone',
     see: 'Voir'
@@ -93,16 +91,6 @@ const aggregateInfos = (person) => {
       person.accreds[i].position + '\n';
     infos += createText('unit', MAX_LINE_LENGTH[locale]) +
       person.accreds[i].acronym + '\n';
-    if (person.accreds[i].address) {
-      const addressPart = person.accreds[i].address.split('$');
-      infos += createText('address', MAX_LINE_LENGTH[locale]);
-      for (let j = 0; j < addressPart.length; j++) {
-        if (j !== 0) {
-          infos += createText(undefined, MAX_LINE_LENGTH[locale]);
-        }
-        infos += addressPart[j].trim() + '\n';
-      }
-    }
 
     if (person.accreds[i].officeList &&
         person.accreds[i].officeList.length > 0) {
