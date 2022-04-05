@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v5.1.0 / 2022-04-05
+
+  - Add unit name
+  - Remove address logic (old API code)
+  - Fix tests
+
 ### v5.0.2 / 2021-11-26
 
   - Migrate to new API
