@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v5.1.1 / 2022-08-12
+
+  - Test against Node.js 18
+  - Update dependencies
+
 ### v5.1.0 / 2022-04-05
 
   - Add unit name
