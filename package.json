@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "repository": "innovativeinnovation/who-is-sciper",
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "bin": "src/cli.js",
   "files": [
@@ -23,19 +23,19 @@
     "test": "eslint . && mocha"
   },
   "devDependencies": {
-    "chai": "^4.3.6",
-    "eslint": "^8.21.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.29.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "mocha": "^10.0.0"
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "chalk": "^4.1.2",
-    "epfl-people-api": "^6.0.1",
+    "epfl-people-api": "^7.0.0",
     "gender-detection": "0.1.0",
-    "yargs": "^17.5.1"
+    "yargs": "^17.6.2"
   }
 }
