@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v6.0.0 / 2022-12-15
+
+  - Drop support for Node < 14
+  - Test against Node.js 19
+  - Update dependencies
+
 ### v5.1.1 / 2022-08-12
 
   - Test against Node.js 18
