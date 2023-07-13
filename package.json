@@ -24,18 +24,18 @@
   },
   "devDependencies": {
     "chai": "^4.3.7",
-    "eslint": "^8.29.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.6.0",
+    "eslint": "^8.44.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "mocha": "^10.2.0"
   },
   "dependencies": {
     "chalk": "^4.1.2",
-    "epfl-people-api": "^7.0.0",
+    "epfl-people-api": "^7.0.1",
     "gender-detection": "0.1.0",
-    "yargs": "^17.6.2"
+    "yargs": "^17.7.2"
   }
 }
